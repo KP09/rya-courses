@@ -3,4 +3,7 @@ class SchoolAdmin < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  # Associations
+  belongs_to :school
 end
