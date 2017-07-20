@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # Devise authentication for users
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :users, controllers: { sessions: 'users/sessions', omniauth_callbacks: 'users/omniauth_callbacks'  }
 
   # Devise authentication for school_admins
   devise_for :school_admins, controllers: { sessions: 'school_admins/sessions' }
